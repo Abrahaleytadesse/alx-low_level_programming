@@ -8,7 +8,7 @@
  *
  * Return: no return.
  */
-void print_to_98(int n)
+void print_to_98(int a)
 {
 	if (a > 98)
 	{
