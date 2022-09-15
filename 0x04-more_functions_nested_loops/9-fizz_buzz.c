@@ -1,33 +1,34 @@
 #include <stdio.h>
 
 /**
- * main - prints numbers from 0 to 100 and multiple of 
- * 3 are replaced with Fizz and Multple 5 with Buzz.
- * Return: returns 0.
+ * main - prints numbers Fizz and Buzz for multiples of 3 and 5 res.
+ * Return: Always 0.
  */
 int main(void)
 {
-	int i;
-	
-	for (i = 1; i <= 100; i++)
+	int n;
+
+	n = 1;
+	printf("%d", n);
+	for (n = 2; n <= 100; n++)
 	{
-		if ((i % 3 == 0) && (i % 5 != 0))
+		if ((n % 3 == 0) && (n % 5 == 0))
 		{
-			printf("Fizz ");
+			printf(" FizzBuzz");
 		}
-		else if ((i % 3 != 0) && (i % 5 == 0))
+		else if (n % 3 == 0)
 		{
-			printf("Buzz ");
+			printf(" Fizz");
 		}
-		else if ((i % 3 == 0) && (i % 5 == 0))
+		else if (n % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf(" Buzz");
 		}
-		else 
+		else
 		{
-			printf("%d ", i);
+			printf(" %d", n);
 		}
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
-}	
+}
