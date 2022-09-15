@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - Prints natural numbers below 1024 that are
@@ -8,13 +8,13 @@
  */
 int main(void)
 {
-	int a, b;
+	int i, j;
 
-	for (a = 1; a < 1024; a++)
+	for (i = 1; i < 1024; i++)
 	{
-		if ((a % 3) == 0 || (a % 5) == 0)
-			b += a;
+		if ((i % 3) == 0 || (i % 5) == 0)
+			j += i;
 	}
-	printf("%d\n", b);
+	printf("%d\n", j);
 	return (0);
 }
