@@ -6,17 +6,17 @@
  */
 int main(void)
 {
-	long int n, pf;
+	long int n, fp;
 
 	n = 612852475143;
-	for (pf = 2; pf <= n; pf++)
+	for (fp = 2; fp <= n; fp++)
 	{
-		while(n / pf == 0)
+		if (n % fp == 0)
 		{
-			printf("%ld", pf);
-			n = n / pf;
+			n /= fp;
+			fp--;
 		}
 	}
-	printf("\n");
+	printf("%ld\n", fp);
 	return (0);
 }
