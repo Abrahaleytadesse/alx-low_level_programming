@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints numbers Fizz and Buzz for multiples of 3 and 5 res.
+ * main - prints numbers Fizz and Buzz for multiple of 3 and 5 res.
  * Return: Always 0.
  */
 int main(void)
