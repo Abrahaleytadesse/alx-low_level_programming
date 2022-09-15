@@ -2,9 +2,9 @@
 
 /**
  * _isdigit - checks for digits (0 through 9)
- * @c : is a digit from ASCII code 
+ * @c: input numbers
  *
- * Return : 1 for the digits otherwise return 0
+ * Return: 1 for the digits otherwise 0
  */
 int _isdigit(int c)
 {
