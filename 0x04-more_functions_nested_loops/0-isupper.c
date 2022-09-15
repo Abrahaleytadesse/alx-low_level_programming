@@ -2,7 +2,7 @@
 
 /**
  * _isupper - checks for uppercase characters
- * @c : is thecharacter in ASCII code
+ * @c: is input character
  *
  * Return: on success 1(uppercase) otherwise 0
  */
@@ -16,5 +16,4 @@ int _isupper(int c)
 	{
 		retrun (0);
 	}
-	_putchar('\n')
 }	
