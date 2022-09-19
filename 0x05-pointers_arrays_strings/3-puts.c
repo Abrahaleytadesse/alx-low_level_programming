@@ -7,5 +7,18 @@
  */
 void _puts(char *str)
 {
-	_puts(*str);
+	int length = 0;
+
+	while (length >= 0)
+	{
+		if (str[length] == '\0')
+		{
+			_putchar('\n');
+		}
+		else
+		{
+			_putchar(str[length]);
+		}
+		length++;
+	_putchar('\n');
 }
