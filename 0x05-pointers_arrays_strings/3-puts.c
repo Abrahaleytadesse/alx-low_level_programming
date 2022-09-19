@@ -14,11 +14,9 @@ void _puts(char *str)
 		if (str[length] == '\0')
 		{
 			_putchar('\n');
+			break;
 		}
-		else
-		{
-			_putchar(str[length]);
-		}
+		_putchar(str[length]);
 		length++;
 	}
 	_putchar('\n');
