@@ -2,10 +2,10 @@
 
 /**
  * _strncat - Concatenates two strings.
- *@dest : destination.
- *@src : source.
- *@n : number of characters to be appended.
- *Return : a pointer to destination.
+ *@dest: destination.
+ *@src: source.
+ *@n: number of characters to be used from src.
+ *Return: a pointer to dest.
  */
 char *_strncat(char *dest, char *src, int n)
 {
