@@ -17,7 +17,7 @@ char *_strcat(char *dest, char *src)
 	}
 	while (len2 >= 0)
 	{
-		*(dest + len1) = *(src + len2)
+		*(dest + len1) = *(src + len2);
 		if (*(src + len2) == '\0')
 			break;
 		len1 = len1 + 1;
