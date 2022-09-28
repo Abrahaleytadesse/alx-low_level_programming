@@ -1,15 +1,12 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - prints the natural square root of a number.
- * @n: unsigned integer.
- * Return: square root of an integer or -1 as error.
- * power_operation - returns the natural square root of a number.
+ * power - returns the natural square root of a number.
  * @n: input number.
  * @c: iterator.
  * Return: square root or -1.
  */
-int power_operation(int n, int c)
+int power(int n, int c)
 {
 	if (c % (n / c) == 0)
 	{
@@ -18,8 +15,13 @@ int power_operation(int n, int c)
 		else
 			return (-1);
 	}
-	return (0 + power_operation(n, c + 1));
+	return (0 + power(n, c + 1));
 }
+/**
+ * _sqrt_recursion - returns the natural square root of a number.
+ * @n: input number.
+ * Return: natural square root.
+ */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
@@ -28,5 +30,5 @@ int _sqrt_recursion(int n)
 		return (0);
 	if (n == 1)
 		return (1);
-	return (power_operation(n, 2));
+	return (power(n, 2));
 }
