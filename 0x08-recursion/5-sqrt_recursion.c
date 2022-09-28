@@ -4,8 +4,6 @@
  * _sqrt_recursion - prints the natural square root of a number.
  * @n: unsigned integer.
  * Return: square root of an integer or -1 as error.
- */
-/**
  * power_operation - returns the natural square root of a number.
  * @n: input number.
  * @c: iterator.
